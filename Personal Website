@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Alexander Maher </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header form/style*/
+    .header {
+    padding: 80px;
+    text-align: center;
+    background: #FF6600;
+    color: navy;
+    }
+
+    /*Font size increase for header*/
+    .header h1 {
+      font-size: 40px;
+    }
+//end Header
+
+//navbar css
+    .navbar a {
+    float: left; //left set of links
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+
+    //contact link
+    .navar a.right { //right link box
+    float: right;
+    }
+
+    //hover
+    .navbar a:hover {
+    background-color: #ddd; //grey
+    color: black; //black text
+    }
+/*end navbar*/
+/*footer style*/
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+</style>
+</head>
+
+/*main body with information*/
+
+  <body>
+    <div class ="header">
+      <h1> Alexander Maher</h1>
+        <p> A personalized website built by me! </p>
+    </div>
+//nav bar
+    <div class="header">
+      <a href = "#">Portfolio</a>
+      <a href = "#">Credentials</a>
+      <a href = "#">Projects</a>
+      <a href = "#"> class="right">Contact Me</a>
+    </div>
+//columns
+      <div class="row">
+        <div class="side">
+        <h2> About Me</h2>
+        <h5>Photo of Me:</h5>
+        //enter picture here
+        <div class = "fakeimg" style ="height:200px;">Image</div>
+          <p> Graduation Photo from 2020 </P.
+      <h3>Pictures of Projects</h3>
+        <p> Here are some pictures of my projects </p>
+
+
+        /*Insert pics here
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+      */
+  <div class ="main">
+    <h2> ELEVATOR PITCH </h2>
+    <h5> Syracuse Pseudo-Graduation, May 10, 2020 </h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p> My name is Alexander Maher and I am a recent graduate of Syracuse University with a B.S. in Computer Engineering.
+        I am looking for full time employment in a software devlopment field, particualrly using
+        SQL or doing Object-Oriented Design in C++. Below is my resume. </p>
+<br>
+  <h2> <strong> <em> Resume </em> </strong>
+    <div class="fakeimg" style="height:200px;">Image</div>
+
+//footer
+<div class ="footer">
+  <h2> Footer </h2>
+</div>
+
+
+</body>
+</html>
