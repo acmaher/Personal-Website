@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Alexander Maher </title>
+<title> Alexander Maher personal website </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
 body {
 font-family: Arial, Helvetica, sans-serif;
+margin: auto;
 }
 
 /*Header form/style*/
     .header {
     padding: 80px;
     text-align: center;
-    background: #FF6600;
-    color: navy;
+    background: #000000;
+    color: white;
     }
 
     /*Font size increase for header*/
     .header h1 {
       font-size: 40px;
     }
-//end Header
+/*end header*/
 
-//navbar css
+/*navbar*/
+
+    .navbar {
+      overflow: hidden;
+      background-Color: #111111;
+    }
+    
     .navbar a {
-    float: left; //left set of links
+    float: left; 
     display: block;
     color: white;
     text-align: center;
@@ -33,17 +43,43 @@ font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     }
 
-    //contact link
-    .navar a.right { //right link box
+    /*contact me*/
+    .navbar a.right {
     float: right;
     }
 
-    //hover
+    /*hover*/
     .navbar a:hover {
-    background-color: #ddd; //grey
-    color: black; //black text
+    background-color: #ddd; 
+    color: black; 
     }
 /*end navbar*/
+/*column container*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+  /*make unequal columns*/
+  .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  /*main column*/
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px
+  }
+
+  /*image structure*/
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
 /*footer style*/
 .footer {
   padding: 20px;
@@ -51,41 +87,58 @@ font-family: Arial, Helvetica, sans-serif;
   background: #ddd;
 }
 
+/*Responsive layout --> columsn stack < 700px wide */
+@media screen and (max-width:700px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+/*Responsive layout -->stack nav bars when screen < 400Px wide*/
+@media screen and (max-width:400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 
-/*main body with information*/
+<!--Main-->
+
 
   <body>
     <div class ="header">
       <h1> Alexander Maher</h1>
         <p> A personalized website built by me! </p>
     </div>
-//nav bar
-    <div class="header">
+<!--Nav bar-->
+    <div class="navbar">
       <a href = "#">Portfolio</a>
       <a href = "#">Credentials</a>
       <a href = "#">Projects</a>
-      <a href = "#"> class="right">Contact Me</a>
+      <a href = "#" class="right">Contact Me</a>
     </div>
-//columns
+<!--columns-->
       <div class="row">
         <div class="side">
         <h2> About Me</h2>
         <h5>Photo of Me:</h5>
-        //enter picture here
+        <!--Picture of me here-->
+        
         <div class = "fakeimg" style ="height:200px;">Image</div>
           <p> Graduation Photo from 2020 </P.
       <h3>Pictures of Projects</h3>
         <p> Here are some pictures of my projects </p>
 
 
-        /*Insert pics here
+        
         <div class="fakeimg" style="height:60px;">Image</div><br>
         <div class="fakeimg" style="height:60px;">Image</div><br>
         <div class="fakeimg" style="height:60px;">Image</div>
         </div>
-      */
+      
   <div class ="main">
     <h2> ELEVATOR PITCH </h2>
     <h5> Syracuse Pseudo-Graduation, May 10, 2020 </h5>
@@ -97,7 +150,7 @@ font-family: Arial, Helvetica, sans-serif;
   <h2> <strong> <em> Resume </em> </strong>
     <div class="fakeimg" style="height:200px;">Image</div>
 
-//footer
+<!--footer-->
 <div class ="footer">
   <h2> Footer </h2>
 </div>
